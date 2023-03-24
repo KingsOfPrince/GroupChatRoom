@@ -1,10 +1,10 @@
 FROM node:14-alpine
 
-WORKDIR /app
+WORKDIR /public
 
 COPY package*.json ./
 
-RUN npm install
+RUN yarn install
 
 COPY . /app/
 
@@ -12,4 +12,4 @@ EXPOSE 3000
 
 ENV NODE_ENV=production
 
-CMD [ "npm", "start" ]
+CMD ["yarn", "dev"]
