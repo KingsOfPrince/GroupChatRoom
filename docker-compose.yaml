@@ -1,8 +1,9 @@
 version: '3'
 services:
-  web:
-    image: kingsofprince/chatmates:chatmate
+  myapp:
+    image: kingsofprince/konzeptplus:lastest
+    command: yarn start
     ports:
-      - 3000:3000
-
-
+      - "3000:3000"
+    volumes:
+      - ./app:/app

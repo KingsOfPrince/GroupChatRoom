@@ -1,33 +1,37 @@
-## ChatMate by Prince and Dominic
+# **KonzeptPlus Chat Room**
+### Why did **I** build this?
+My main focus was to show what I'm capable of. So I built a Chat Room app, in that way i can show my programming skills and my Best Pratices/code conventions.
 
-ChatMate is a web application made people who want to chat through the internet and leave so trace.
+### What is KonzeptPlus Chat Room? 
+This is private chat rooms for Konzept Plus Meeting. This chat room is mainly for work purpose and not for anything else.
+### What did i use for languages?
+For this project i mainly used **JavaScript, HTML and CSS**.
 
-## Usage
+### Animations 
+For the background animation, I used **Particle JS** which is CDN framework and a open source. It is a **responsive** and **interactive** background.
+For the text animation, I used CSS animation.
+
+### Usage
 Before you Start the website you have to install Node Modules with yarn or npm with the following commands:
+You can access the web application by going to a web broswer and either with **192.168.x.x:3000(ip-adress:port) or localhost:3000**
 
-## NPM
+### NPM
 ```bash
 npm install 
 ```
 ```bash
 npm run dev 
 ```
-## Yarn 
+### Yarn 
 ```bash
 yarn install 
 ```
 ```bash
 yarn dev 
 ```
+### Docker Problem
+I try to **containerize** with **Docker** but i'm getting a error all the time.
+I will be trying to slove the problem in the near future.
 
-## Docker Problem 
-
-Our Docker is have some problems and can't get any data from the server.
-We would suggest to run it with "npm" or "yarn".
-We apologise in advance that the Docker function is not working.
-### Problem:
-We can start the Container but if we go to "localhost:3000" it outputs "CANNOT GET./"
-
-## Author 
-Prince Veluthedathu, 
-Dominic Bannert
+### Next Step 
+I will be implementing a database and a Authentication with the help of Firebase.

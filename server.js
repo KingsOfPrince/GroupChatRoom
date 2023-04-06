@@ -18,7 +18,7 @@ const io = socketio(server);
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-const botName = 'ChatMate Bot ';
+const botName = 'KozeptPlus Bot ';
 
 // Run when client connects
 io.on('connection', socket => {
@@ -28,7 +28,7 @@ io.on('connection', socket => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit('message', formatMessage(botName, 'Welcome to ChatMate!'));
+    socket.emit('message', formatMessage(botName, 'Welcome to KonzeptPlus Private Room!'));
 
     // Broadcast when a user connects
     socket.broadcast

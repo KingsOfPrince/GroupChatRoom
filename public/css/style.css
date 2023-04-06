@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #323232;
-	--dark-color-b: #858585;
-	--light-color: #e6e9ff;
-	--success-color: #5cb85c;
+	--dark-color-a: #858585ae;
+	--dark-color-b: #858585a4;
 	--error-color: #d9534f;
 }
 
@@ -19,6 +17,14 @@ body {
 	font-size: 16px;
 	background: black;
 	margin: 20px;
+}
+
+#username{
+	border-radius: 10px;
+}
+
+#room{
+	border-radius: 10px;
 }
 
 ul {
@@ -39,6 +45,10 @@ a {
 	font-size: 17px;
 }
 
+#leave-btn{
+	background-color: red;
+}
+
 /* Chat Page */
 
 .chat-container {
@@ -51,7 +61,7 @@ a {
 
 .chat-header {
 	background: var(--dark-color-a);
-	color: rgb(84, 218, 84);
+	color: rgb(21, 134, 134);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	padding: 15px;
@@ -66,7 +76,7 @@ a {
 }
 
 .chat-sidebar {
-	background:rgba(84, 218, 84, 0.767);
+	background:rgba(14, 159, 14, 0.788);
 	color: #000000;
 	padding: 20px 20px 60px;
 	overflow-y: scroll;
@@ -96,7 +106,7 @@ a {
 .chat-messages .message {
 	padding: 10px;
 	margin-bottom: 15px;
-	background-color: lightgreen;
+	background-color: rgb(156, 154, 154);
 	border-radius: 5px;
 	overflow-wrap: break-word;
 }
@@ -110,7 +120,7 @@ a {
 }
 
 .chat-messages .message .meta span {
-	color: #777;
+	color: rgb(0, 73, 55);
 }
 
 .chat-form-container {
@@ -158,6 +168,7 @@ a {
 
 .join-main .form-control {
 	margin-bottom: 20px;
+	
 }
 
 .join-main label {
@@ -207,4 +218,34 @@ a {
   z-index: -1;
   top: 0;
   left: 0;
+}
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #154357 0%,
+    #107a71 29%,
+    #0b8837 67%,
+    #34d629 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+      font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }

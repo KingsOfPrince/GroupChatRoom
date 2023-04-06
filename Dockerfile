@@ -1,15 +1,20 @@
-FROM node:14-alpine
+# Use an official Node.js runtime as a parent image
+FROM node:18-alpine
 
-WORKDIR /public
+# Set the working directory to /app
+WORKDIR /app
 
-COPY package*.json ./
+# Copy the current directory contents into the container at /app
+COPY . /app
 
-RUN yarn install
+# Install any needed packages specified in package.json
+RUN yarn
 
-COPY . /app/
+# Make port 80 available to the world outside this container
+EXPOSE 30
 
-EXPOSE 3000
+# Define environment variable
+ENV NAME World
 
-ENV NODE_ENV=production
-
-CMD ["yarn", "dev"]
+# Run the app when the container launches
+CMD ["yarn", "run"]
